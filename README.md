@@ -8,23 +8,23 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
@@ -78,4 +78,8 @@ but i don't know why i can't get today's month.....
 <img src="https://res.cloudinary.com/djnhw4aey/image/upload/v1649077991/date_zd53pb.png" width=500>
 
 please make more video on React♥︎Thanks a lot.
+
 [Axios in React JS - How to Make API Calls Using Axios](https://youtu.be/dTahxuXRmfk)
+
+**Open Weather**
+[![OpenWeather](https://res.cloudinary.com/djnhw4aey/image/upload/v1649082672/openWeather_bxoc6j.png)](https://openweathermap.org/)
