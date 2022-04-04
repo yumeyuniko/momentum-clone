@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { WeatherContainer, Temp, City } from './WeatherStyles';
 
-const url = `https://api.openweathermap.org/data/2.5/weather?q=dallas&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=fukui&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`;
 
 const Weather = () => {
   const [data, setData] = useState(null);
@@ -22,8 +23,18 @@ const Weather = () => {
   if (!data) return null;
 
   return (
-    <div>
-      <p>{data.main.temp.toFixed(0)}</p>
+    <WeatherContainer>
+      <Temp>{data.main.temp.toFixed(0)}&#176;</Temp>
+      <Temp>
+        {' '}
+        <img
+          src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
+          alt="icon"
+          style={{ width: 100 }}
+        />
+      </Temp>
+
+      <City>Fukui, JA</City>
       {/* <p style={{ 'text-transform': 'uppercase', textAlign: 'center' }}>
         {data.weather[0].main}
       </p> */}
@@ -32,7 +43,7 @@ const Weather = () => {
         alt="icon"
         style={{ width: 300 }}
       /> */}
-    </div>
+    </WeatherContainer>
   );
 };
 
